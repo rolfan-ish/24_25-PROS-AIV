@@ -56,5 +56,6 @@ int main(int argc, char *argv[]) {
   /* Inside nieto */
   recvmsg(hij_pipe, "\t\t", "NIETO");
   sendmsg(hij_pipe, "\t\t", "NIETO", "HIJO", "hijo: Saludo del nieto");
+  // pipes are closed by the OS for us
   return 0;
 }
